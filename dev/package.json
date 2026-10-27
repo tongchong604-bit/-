@@ -1,0 +1,13 @@
+{
+  "name": "douyin-collector-dev-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test collector*.test.mjs",
+    "browser": "node ../tools/browser-collector-smoke.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "22.1.0",
+    "playwright-core": "1.51.1"
+  }
+}
