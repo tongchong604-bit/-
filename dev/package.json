@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test collector*.test.mjs",
+    "test": "node --test *.test.mjs",
     "browser": "node ../tools/browser-collector-smoke.mjs"
   },
   "devDependencies": {

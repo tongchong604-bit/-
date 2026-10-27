@@ -61,3 +61,25 @@ if(existsSync(script)){
   assert.deepEqual(Array.from(extractNote(doc,url).images),[pic]);
  });
 }
+if(existsSync(script)){
+ const context=vm.createContext({URL});vm.runInContext(readFileSync(script,'utf8'),context);
+ const api=context.DouyinCollector,url='https://www.douyin.com/note/7365500792104684834';
+ test('explicit picture selection works without layout selectors and marks partial capture',()=>{
+  const doc=new JSDOM('<title>参考图文 - 抖音</title><div class="unrecognised-player"><img src="https://p3.douyinpic.com/selected.jpg"></div><aside><img src="https://p3.douyinpic.com/avatar.jpg"></aside>',{url}).window.document;
+  const selected=doc.querySelector('.unrecognised-player img');
+  const note=api.extractSelected(doc,url,selected);
+  assert.deepEqual(Array.from(note.images),['https://p3.douyinpic.com/selected.jpg']);assert.equal(note.source,'manual');assert.equal(note.expectedImages,null);assert.ok(note.warnings.length>0);
+ });
+ test('manual selection can read an allowed CSS picture but never another site or a video cover',()=>{
+  const doc=new JSDOM('<div id="chosen" style="background-image:url(https://p3.douyinpic.com/background.png)"></div><img id="bad" src="https://evil.example/private.png"><video poster="https://p3.douyinpic.com/cover.png"></video>',{url}).window.document;
+  assert.equal(api.extractSelected(doc,url,doc.querySelector('#chosen')).images[0],'https://p3.douyinpic.com/background.png');
+  assert.throws(()=>api.extractSelected(doc,url,doc.querySelector('#bad')));
+  assert.throws(()=>api.extractSelected(doc,url,doc.querySelector('video')));
+ });
+ test('manual selection cannot capture images behind a visible challenge or under another note id',()=>{
+  const doc=new JSDOM('<div role="dialog">请完成验证</div><img src="https://p3.douyinpic.com/a.png">',{url}).window.document;
+  assert.throws(()=>api.extractSelected(doc,url,doc.querySelector('img')),/验证/);
+  const foreign=new JSDOM('<div data-aweme-id="9999999999999999999"><img src="https://p3.douyinpic.com/foreign.png"></div>',{url}).window.document;
+  assert.throws(()=>api.extractSelected(foreign,url,foreign.querySelector('img')));
+ });
+}

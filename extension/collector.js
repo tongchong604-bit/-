@@ -92,7 +92,7 @@
       const matched = roots.filter(el => String(el.getAttribute('data-aweme-id') || el.getAttribute('data-id') || '') === id);
       const candidates = matched.length ? matched : roots.filter(el => !el.hasAttribute('data-aweme-id') && !el.hasAttribute('data-id'));
       const parent = candidates.length === 1 ? candidates[0] : null;
-      if (!parent) throw Error('未找到当前图文内容。请在浏览器正常打开笔记、完成必要登录/验证，等待图片加载后再试。');
+      if (!parent) throw Error('当前布局未能自动识别。若图片已显示，请使用“点选当前大图”，不必重复登录。');
       const imageContainers = Array.from(parent.querySelectorAll('[data-e2e="note-images"],[data-e2e="note-content"],[data-e2e="image-list"],[data-e2e="note-image"]'));
       const images = [];
       for (const container of imageContainers) for (const el of container.querySelectorAll('img')) {
@@ -117,5 +117,27 @@
     if (!result.text) result.warnings.push('没有读到正文，请核对原笔记并补充说明。');
     return Object.assign(result, { id, url: 'https://www.douyin.com/note/' + id, title: result.text.split('\n')[0].slice(0, 80) || '抖音图文 ' + id, source, capturedAt: new Date().toISOString() });
   }
-  root.DouyinCollector = { extractNote, safeMediaUrl, imageDomains };
+  function extractSelected(doc, pageUrl, selected) {
+    const id = noteId(pageUrl);
+    if (accessBlocked(doc)) throw Error('页面有登录或验证提示，请正常完成后再采集。');
+    if (!selected || selected.ownerDocument !== doc || selected.tagName === 'VIDEO') throw Error('请点选图文中的图片。');
+    for (let node = selected; node && node.nodeType === 1; node = node.parentElement) {
+      const owner = node.getAttribute('data-aweme-id') || node.getAttribute('data-id');
+      if (owner && /^\d{6,22}$/.test(owner) && owner !== id) throw Error('这张图片属于另一篇内容，请选择当前笔记的大图。');
+    }
+    const candidates = [];
+    if (selected.tagName === 'IMG') candidates.push(selected.getAttribute('data-original'), selected.currentSrc, selected.getAttribute('src'), selected.getAttribute('data-src'));
+    const style = doc.defaultView && doc.defaultView.getComputedStyle(selected);
+    const background = style && style.backgroundImage || '';
+    const pattern = /url\(["']?([^"')]+)["']?\)/g; let match;
+    while ((match = pattern.exec(background))) candidates.push(match[1]);
+    const url = candidates.map(safeMediaUrl).find(Boolean);
+    if (!url) throw Error('这里没有可直接读取的图片地址，请点击图片本身；若仍失败，该图可能使用了画布或特殊格式。');
+    const scope = selected.closest('[data-e2e="note-detail"],[data-e2e="aweme-detail"],[role="dialog"],main') || selected.parentElement || selected;
+    const text = textFrom(scope, ['[data-e2e="video-desc"]','[data-e2e="note-desc"]']).slice(0,40000);
+    const author = textFrom(scope, ['[data-e2e="user-title"]','[data-e2e="user-name"]']).slice(0,200);
+    return {id,url:'https://www.douyin.com/note/'+id,title:text.split('\n')[0].slice(0,80) || '手动采集 '+id,text,author,images:[url],source:'manual',expectedImages:null,
+      warnings:['手动采集当前一张图，未确认整篇张数和顺序。请逐张翻图并重复点选；正文也请核对。'],capturedAt:new Date().toISOString()};
+  }
+  root.DouyinCollector = { extractNote, extractSelected, safeMediaUrl, imageDomains };
 })(globalThis);

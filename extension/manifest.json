@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "图文参考采集助手",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "在自己正常打开的抖音图文页采集正文和配图，按大小分包导出，供整理参考。",
   "minimum_chrome_version": "109",
   "permissions": [
