@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "date": "2026-10-27",
+      "topic": "小吃培训综合",
+      "title": "小吃培训去哪学？先看这3点"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "烧烤",
+      "title": "烧烤去哪学靠谱？别只盯着学费"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "早餐综合",
+      "title": "早餐培训去哪学？先选品类再选课"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "铁板鸡架",
+      "title": "铁板鸡架培训去哪学？新手摆摊先问清这些",
+      "images": 3,
+      "archive": "downloads/douyin-geo-20261028.zip"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "杂粮煎饼",
+      "title": "杂粮煎饼去哪学靠谱？先看摊饼基本功",
+      "images": 3,
+      "archive": "downloads/douyin-geo-20261028.zip"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "现捞热卤",
+      "title": "现捞热卤培训怎么选？这四个环节别漏问",
+      "images": 3,
+      "archive": "downloads/douyin-geo-20261028.zip"
+    }
+  ]
+}
