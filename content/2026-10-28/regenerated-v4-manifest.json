@@ -1,0 +1,78 @@
+{
+  "archive": "douyin-geo-20261028-v4.zip",
+  "images": [
+    {
+      "file": "01-铁板鸡架/1.png",
+      "sha256": "d454a6c0103448797d885dbf1a3935fe98d9bed40111a96e3bbff1d73dae9030",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/2.png",
+      "sha256": "64b6d12caa2892ba5a02e8baa5594ebacb87c8520284765b63631ee76f8d478c",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/3.png",
+      "sha256": "aba8719039f440a9fa8e83b08d379be576f8959063cdc73ff0e43bcd00806bc9",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/4.png",
+      "sha256": "5fa1f83cfea53b6f312c837e9a7b03d9b3b5ceb22e95afc4f579b31139a43eeb",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/1.png",
+      "sha256": "7f93748b3259fe01f36aff025419d611346125897081d20118c1be9018b26532",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/2.png",
+      "sha256": "5592fad8d5774944d902e05a177fb4f6dc77756209a102b20808a2d103b5180c",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/3.png",
+      "sha256": "5f6d7d3661ffc15353dc4db1372cbcab2589cc882b1981ff8dfeef0b814b08d3",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/4.png",
+      "sha256": "b25812d0435433fa7c2314866015a690878a99de69bd4c4d0bf87991f17aad8e",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/1.png",
+      "sha256": "1cef6ddf7911c4b1497a5713e87be371d513d34d2d8c5dc4a6a27d98f6d1ca24",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/2.png",
+      "sha256": "920f5e98ece02e0555610c7b7b39012145c381e9c4b37655641c344af2df9411",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/3.png",
+      "sha256": "1b2cd7abfb1a11d2f620c52f9aa8afffa91a762c8c9d19575ae22ff10dd8be30",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/4.png",
+      "sha256": "30117d65b39bbfc9f1119d1a264831b3d2b783c828bc1e2a165ce1f9a19bffd6",
+      "width": 1086,
+      "height": 1448
+    }
+  ],
+  "visual_review": "图片逐张检查，未印身份标签、网站来源、优先考察或页码"
+}
