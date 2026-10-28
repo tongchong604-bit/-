@@ -1,0 +1,89 @@
+{
+  "archive": "douyin-geo-20261028-v3.zip",
+  "images": [
+    {
+      "file": "01-铁板鸡架/1.png",
+      "source": "exec-cd92071f-352a-4356-9de5-903ef0be01aa.png",
+      "sha256": "2f877724ad21a241e2c50e5bf7e727c9cbbb8e3cf49517f84f6e4d4a70016cfe",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/2.png",
+      "source": "exec-fb14d625-dd87-4a4b-902b-564e1d485b8a.png",
+      "sha256": "2abeff46c9d9dfc4c2b4cc7f012dd029ea39e6155248d182cded5377cf6b4150",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/3.png",
+      "source": "exec-e73887b8-c8cc-4286-a2f6-2dd131ac5516.png",
+      "sha256": "83c63368e57049dff23a70156ca252f2241d0dfdedb8ce343ad3ad339c28a0a2",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "01-铁板鸡架/4.png",
+      "source": "exec-333149ff-3ca5-43c6-91d9-7aa4d67a5c67.png",
+      "sha256": "8f7300de89e4427db72086b44eb8dc36e0eae8360d5c5cb535a801689c452cef",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/1.png",
+      "source": "exec-2fb02702-d118-497d-b38d-a246daf456c9.png",
+      "sha256": "24e48dc39d8da27882cdbbac3f76cddc2c7917e2088b697fa885c7a4bda00326",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/2.png",
+      "source": "exec-530c5a70-8b78-4240-88fc-7f8edb3ec53c.png",
+      "sha256": "028aa22627802cd30afba99b6131420560d2af012197e418e7e820533e48f835",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/3.png",
+      "source": "exec-15b0e560-a79a-48a8-9027-0404b3d7d0d7.png",
+      "sha256": "92982c1cf9e138a9ab2585ad2f1bfa855aa2adf430ebb6d2f178d1e2811e5e8e",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "02-杂粮煎饼/4.png",
+      "source": "exec-8d7ca4f2-bf2b-4e76-a91b-b2049a898f8e.png",
+      "sha256": "4096cbe7593d5ac1db068aa8c30b98642f218ac503a9ea44eaf3761a694c5ce1",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/1.png",
+      "source": "exec-15537f2f-b16b-4b85-9193-80380d9c79b9.png",
+      "sha256": "fd074c686daf6d9405e0029fab6282952e15c1d929c6403488a5aa0ec77e1d0b",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/2.png",
+      "source": "exec-a5c27817-b219-4879-b8f9-86cc0a367be0.png",
+      "sha256": "1361c5294db9038a6b28e94fb083a760e6bb406ebb28c063be50014912fd6cef",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/3.png",
+      "source": "exec-bb05bffe-0466-43a3-8a54-10316f1c1476.png",
+      "sha256": "d3e0398b15b237ef0b379d1032a9af0e2186bef5a2525e6b44afd2c122a5256f",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "03-现捞热卤/4.png",
+      "source": "exec-8b4a52fa-3f22-4e45-a8ba-1beb83645f74.png",
+      "sha256": "5943cc9faabc7be1bf3d1eb444e2c710c116e5f06b998ceef9e7f0b0cb88acff",
+      "width": 1086,
+      "height": 1448
+    }
+  ]
+}
