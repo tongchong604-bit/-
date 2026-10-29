@@ -1,0 +1,35 @@
+{
+  "images": [
+    {
+      "file": "01.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2282735,
+      "sha256": "085db16585d5a58a72b4ba3d973173f16d8c864b43437ec1f20b2a42c7be4384"
+    },
+    {
+      "file": "02.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2458348,
+      "sha256": "ed964b2c3f55e43af166bc6b043ce3d98d2e74622729218d13c9d6cc048aef56"
+    },
+    {
+      "file": "03.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2162136,
+      "sha256": "42c87fceda02cf188429c41e951df38cd36891ae302b064dee9d18613706591c"
+    },
+    {
+      "file": "04.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2239136,
+      "sha256": "05ae91da7bd89e5b9816d264d7989fad7e78db963b1d83a6a6d820b4360a0cf1"
+    }
+  ],
+  "archive": "douyin-schools-2026-20261029.zip",
+  "archive_bytes": 8810150,
+  "archive_sha256": "f238203d2405b6940a27c35eb7fb89edd7d966937a10daee1ddd0e103b6d5d1e"
+}
