@@ -1,0 +1,114 @@
+{
+  "files": [
+    {
+      "file": "01-烤生蚝/01.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2440068,
+      "sha256": "c935ae19f08196df656958436cd7208c8cea5b0aceae4b390b9cdfdf40fdb41b"
+    },
+    {
+      "file": "01-烤生蚝/02.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2483165,
+      "sha256": "e8330aca0870217a64db50999b73bbd9db3ac0ceb646e3aa00265b53b69abaa2"
+    },
+    {
+      "file": "01-烤生蚝/03.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2152157,
+      "sha256": "8f7964036f2413a9cc0d6e95a1ed956737aad8235b6262485604187cb587e5c8"
+    },
+    {
+      "file": "01-烤生蚝/04.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2556395,
+      "sha256": "833da4f81c297c700a0813ce8a6f8bae0ebf2b7068638950fe35490a4ae46fd4"
+    },
+    {
+      "file": "01-烤生蚝/05.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2886979,
+      "sha256": "fb64518c85b3b04c5af0d29231bfae7bdd56de5e67fe87284263267dc68bba89"
+    },
+    {
+      "file": "02-酸辣粉/01.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2536783,
+      "sha256": "0191eeb5cbb6ba76fda12632c2cbd749bcdd17ebb79b0a32c0dabd2bae709cdd"
+    },
+    {
+      "file": "02-酸辣粉/02.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2040980,
+      "sha256": "5c25747bab8aa71fc46732b8387596407af8dd872e2a0dd6c8a143fab7d3cc5b"
+    },
+    {
+      "file": "02-酸辣粉/03.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2448202,
+      "sha256": "a1b2ef9b120819714d8daf05cd626670da0d7481e20168b58d054c698375b398"
+    },
+    {
+      "file": "02-酸辣粉/04.png",
+      "width": 1087,
+      "height": 1447,
+      "bytes": 2497881,
+      "sha256": "f9ff3c3c7d6fd6301cdf0a4d622c311d2961c9c4f9ed5b18b3b0896a34521dc0"
+    },
+    {
+      "file": "02-酸辣粉/05.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2762481,
+      "sha256": "cea5e2856238f5f98cba4319e6a55e323a2cbcbe3ef628b7c7272d19a5d0d229"
+    },
+    {
+      "file": "03-提拉米苏/01.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2438563,
+      "sha256": "28ee5333ae380f2ce1e96f97a9bf8ef5e5a95e6bc822753a9c16cc9e32a72b69"
+    },
+    {
+      "file": "03-提拉米苏/02.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2242793,
+      "sha256": "0393c917e601e762b6d5ca0f7ea7b6bb3a91953421018b3400e20a46f94ad6a3"
+    },
+    {
+      "file": "03-提拉米苏/03.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2445453,
+      "sha256": "e7965aa900df915edb2cf8e9e89eed6c6a10f66a2347ed77b865dfb6f0908a03"
+    },
+    {
+      "file": "03-提拉米苏/04.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2305358,
+      "sha256": "ef9c9a3e2a1c5286abd5468c792d3183470cdeefe7608cddb8a8d454c988a6cb"
+    },
+    {
+      "file": "03-提拉米苏/05.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2801091,
+      "sha256": "ae8e3a4b36699a6b1974db4be4e31905c6a20905d23f2d164caf63f9700ea04b"
+    }
+  ],
+  "archive": "douyin-geo-20261030.zip",
+  "bytes": 36053240,
+  "sha256": "d03782dc331ea39673fa5c742da4cefdf534012a6a37d95c8911c2c0356ceda3",
+  "images": 15,
+  "txt": 3
+}
